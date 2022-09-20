@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV Show Lookup</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="form-inline mt-3">
+            <div class="form-group mx-sm-3 mb-2">
+              <input
+                type="text"
+                class="form-control"
+                id="txtShow"
+                placeholder="TV Show"
+              />
+            </div>
+            <button class="btn btn-primary mb-2" id="btnShowLookup">
+              Lookup Show
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <img
+            src="https://via.placeholder.com/680x1000"
+            class="img-fluid rounded"
+            id="image"
+          />
+        </div>
+
+        <div class="col-9">
+          <div class="row">
+            <div class="col-12">
+              <h1 id="name" class="display-4">TV Show Name</h1>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-2">
+              <h4>
+                <i class="fa fa-star"></i>
+                <span id="rating">0.0</span>
+              </h4>
+            </div>
+
+            <div class="col-3">
+              <h4>
+                <i class="fa fa-clock-o"></i>
+                <span id="runtime">0</span> min
+              </h4>
+            </div>
+
+            <div class="col-6">
+              <h4>
+                <i class="fa fa-comment"></i>
+                <span id="language">Language</span>
+              </h4>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-8">
+              <div id="summary">
+                <p>The show description will show up here.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
